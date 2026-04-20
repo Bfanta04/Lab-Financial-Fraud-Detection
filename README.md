@@ -7,7 +7,7 @@ This a Financial Fraud Dataset. Within this project, we will take a look at a sy
 
 1. Fraud is concentrated in two transaction types. Analysis of fraud rate by transaction type revealed that CASH_OUT and TRANSFER are the main transaction types associated with fraud. 
 
-![Fraud Rate by Transaction Type](typeoutput.png)
+![Fraud Rate by Transaction Type](Docs.ipynb/typeoutput.png)
 
 2. Account balance wipeout is the strongest fraud signal. Scatter plots of oldbalanceOrg vs. amount & newbalanceOrg vs amount show a tight cluster of fraud cases where the transaction amount equals the entire original balance — effectively draining accounts to zero. This pattern held regardless of transaction size, supporting the core hypothesis: if an account is wiped to zero, it is likely fraud.
 ![ New Balance vs Amount Scatter](Docs.ipynb/output.png)
@@ -19,7 +19,7 @@ This a Financial Fraud Dataset. Within this project, we will take a look at a sy
 The correlation heatmap revealed high collinearity between these two destination balance columns, meaning one is largely redundant for modeling purposes.
 
 
-![Heatmap](Docs.ipynb/images/image-1.png)
+![Heatmap](Docs.ipynb/image-1.png)
 
 4. step (time) is not a reliable fraud predictor.
 A line plot of fraud rate over time showed irregular spikes with no consistent temporal pattern. Fraud does not cluster at specific time steps, making this feature a poor predictor. Step time will be a feature that is dropped as it is not signifcant for indicating any patterns in fraud rates.
