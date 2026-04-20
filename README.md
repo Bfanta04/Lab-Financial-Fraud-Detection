@@ -10,21 +10,21 @@ This a Financial Fraud Dataset. Within this project, we will take a look at a sy
 ![Fraud Rate by Transaction Type](typeoutput.png)
 
 2. Account balance wipeout is the strongest fraud signal. Scatter plots of oldbalanceOrg vs. amount & newbalanceOrg vs amount show a tight cluster of fraud cases where the transaction amount equals the entire original balance — effectively draining accounts to zero. This pattern held regardless of transaction size, supporting the core hypothesis: if an account is wiped to zero, it is likely fraud.
-![ New Balance vs Amount Scatter](output.png)
+![ New Balance vs Amount Scatter](Docs.ipynb/output.png)
 
-![Old Balance vs Amount Scatter](image.png)
+![Old Balance vs Amount Scatter](Docs.ipynb/image.png)
 
 
 3. newbalanceDest and oldbalanceDest are highly correlated.
 The correlation heatmap revealed high collinearity between these two destination balance columns, meaning one is largely redundant for modeling purposes.
 
 
-![Heatmap](images/image-1.png)
+![Heatmap](Docs.ipynb/images/image-1.png)
 
 4. step (time) is not a reliable fraud predictor.
 A line plot of fraud rate over time showed irregular spikes with no consistent temporal pattern. Fraud does not cluster at specific time steps, making this feature a poor predictor. Step time will be a feature that is dropped as it is not signifcant for indicating any patterns in fraud rates.
 
-![Step Over Time](stepoutput.png)
+![Step Over Time](Docs.ipynb/stepoutput.png)
 
 
 ##Feature Engineering 🛠️:
