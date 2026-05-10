@@ -1,4 +1,4 @@
-# Read Me File
+# Analytical Insight to Improve Fraud Detection Accuracy File
 
 ##About: 
 This a Financial Fraud Dataset. Within this project, we will take a look at a synthetic dataset of bank transactions to see which strategies we can take in order to successfully capture as many fraudulent transactions as possible, while also minimizing false positives. 
