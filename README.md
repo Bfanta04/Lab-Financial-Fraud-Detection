@@ -1,4 +1,4 @@
-# Analytical Insight to Improve Fraud Detection Accuracy File
+## Analytical Insight to Improve Fraud Detection Accuracy File
 
 ## About: 
 This a Financial Fraud Dataset. Within this project, we will take a look at a synthetic dataset of bank transactions to see which strategies we can take in order to successfully capture as many fraudulent transactions as possible, while also minimizing false positives. 
@@ -43,4 +43,4 @@ Outliers were intentionally retained. Banking datasets naturally contain high-va
 
 RandomizedSearchCV was chosen over GridSearchCV because of the large datset size. GridSearchCV exhaustively tests every combination of hyperparameters, which would be computationally prohibitive at this scale.
 
-The model’s performance improved slightly after discovering the optimal hyperparameters. The number of False Negatives reduced by 2 transactions. It went from 470 with the baseline model and 468 with the hyperparameter tuning. The baseline F1 score was 79 and the final hyperparameter tuning score was 82. 
+The model’s performance improved after discovering the optimal hyperparameters. The number of False Negatives reduced by 226. It went from 470 with the baseline model and 244 with the hyperparameter tuning. 
